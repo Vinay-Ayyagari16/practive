@@ -50,8 +50,30 @@ print(df.nunique())
 print( df['Weight'].apply(lambda x: x * 0.4536))  # Convert lbs to kg
 #purpose: Apply a function to each row or column.
 
+#count and remove duplicate value
+print(df.duplicated().sum())         # Count duplicates
+print(df.drop_duplicates(inplace=True))  # Remove them
+#purpose:Identify or remove duplicate rows
+
+#display the index 
+print(df.set_index('Name', inplace=True))  # Set player name as index
+print(df.reset_index(inplace=True))         # Restore default index
+#purpose:Set or reset DataFrame index
+
+#display rhe queries
+print(df.query('Age > 30 and Position == "C"'))
+#purpose:filter rows using a query string
+
+#display the sample row
+print(df.sample(5))  # Get 5 random rows
+#purpose: Randomly sample rows
+
+#rename function
+print(df.rename(columns={'Height': 'Player_Height'}, inplace=True))
+#Purpose: Rename column names
 
 
+print("my name is vinay")
 
 
 

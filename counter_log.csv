@@ -1,0 +1,4 @@
+timestamp,action,step,new_count
+2025-05-09 17:40:37.361391,increment,1,1
+2025-05-09 17:40:37.361432,increment,3,4
+2025-05-09 17:40:37.361433,decrement,2,2

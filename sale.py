@@ -63,7 +63,7 @@ print(refund_by_product)
 
 #Q11. Concatenate Sales and Returns (common columns only)
 common_cols = sales_df.columns.intersection(returns_df.columns)
-transaction_log = pd.concat([sales_df[common_cols], retu￼rns_df[common_cols]], ignore_index=True)
+transaction_log = pd.concat([sales_df[common_cols], returns_df[common_cols]], ignore_index=True)
 print(common_cols)
 print(transaction_log)
 
